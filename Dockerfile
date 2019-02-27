@@ -1,5 +1,5 @@
-FROM webhippie/minecraft-vanilla:1.12.2
-MAINTAINER Thomas Boerger <thomas@webhippie.de>
+FROM cwlf/minecraft-vanilla:1.12.2
+MAINTAINER Chip Wolf <hello@chipwolf.uk>
 
 VOLUME ["/minecraft/merge", "/minecraft/world", "/minecraft/logs", "/minecraft/dynmap"]
 
@@ -14,7 +14,7 @@ ENV FORGE_VERSION 14.23.5.2815
 ENV FORGE_JAR forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-universal.jar
 ENV FORGE_URL http://files.minecraftforge.net/maven/net/minecraftforge/forge/${MINECRAFT_VERSION}-${FORGE_VERSION}/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar
 
-RUN curl --create-dirs -sLo /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar ${FORGE_URL} && \
+RUN curl --create-dirs -sfLo /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar ${FORGE_URL} && \
   cd /minecraft && \
   java -jar forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar --installServer && \
   rm -f /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar.log

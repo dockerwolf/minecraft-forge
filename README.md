@@ -29,6 +29,19 @@ To get an overview about the available versions please take a look at the [GitHu
 
 ```bash
 ENV SERVER_DYNMAP true
+ENV SERVER_SPONGE false
+
+ENV DYNMAP_VERSION 3.0-beta-3-forge
+
+# The following require SERVER_SPONGE to equal true
+ENV SPONGE_FAWE false
+ENV SPONGE_LUCKPERMS false
+ENV SPONGE_NUCLEUS false
+
+ENV SPONGE_VERSION 2768-7.1.5
+ENV FAWE_VERSION sponge112-19.09.12-dc2d277-1245-22.0.7
+ENV LUCKPERMS_VERSION 4.3.99
+ENV NUCLEUS_VERSION 1.8.3-S7.1
 ```
 
 
