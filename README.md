@@ -1,13 +1,13 @@
 # Minecraft Forge
 
-[![](https://images.microbadger.com/badges/image/webhippie/minecraft-forge.svg)](https://microbadger.com/images/webhippie/minecraft-forge "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/cwlf/minecraft-forge.svg)](https://microbadger.com/images/cwlf/minecraft-forge)
 
-These are docker images for [Minecraft Forge](http://www.minecraftforge.net) running on a [Minecraft container](https://registry.hub.docker.com/u/webhippie/minecraft-vanilla/).
+These are docker images for [Minecraft Forge](http://www.minecraftforge.net) running on an [Minecraft container](https://registry.hub.docker.com/u/cwlf/minecraft-vanilla/).
 
 
 ## Versions
 
-To get an overview about the available versions please take a look at the [GitHub branches](https://github.com/dockhippie/minecraft-forge/branches/all) or our [Docker Hub tags](https://hub.docker.com/r/webhippie/minecraft-forge/tags/), these lists are always up to date.
+To get an overview about the available versions please take a look at the [GitHub branches](https://github.com/dockerwolf/minecraft-forge/branches/all) or our [Docker Hub tags](https://hub.docker.com/r/cwlf/minecraft-forge/tags/), these lists are always up to date.
 
 
 ## Volumes
@@ -34,9 +34,8 @@ ENV SERVER_DYNMAP true
 
 ## Inherited environment variables
 
-* [webhippie/minecraft-vanilla](https://github.com/dockhippie/minecraft-vanilla#available-environment-variables)
-* [webhippie/java](https://github.com/dockhippie/java#available-environment-variables)
-* [webhippie/alpine](https://github.com/dockhippie/alpine#available-environment-variables)
+* [dockerwolf/minecraft-vanilla](https://github.com/dockerwolf/minecraft-vanilla#available-environment-variables)
+* [dockerwolf/openjdk-openj9](https://github.com/dockerwolf/openjdk-openj9#available-environment-variables)
 
 
 ## Contributing
@@ -47,7 +46,7 @@ Fork -> Patch -> Push -> Pull Request
 ## Authors
 
 * [Thomas Boerger](https://github.com/tboerger)
-
+* [Chip Wolf](https://github.com/chipwolf)
 
 ## License
 
@@ -58,4 +57,5 @@ MIT
 
 ```
 Copyright (c) 2015-2017 Thomas Boerger <http://www.webhippie.de>
+Copyright (c) 2019 Chip Wolf <https://chipwolf.uk>
 ```

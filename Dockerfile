@@ -28,7 +28,7 @@ ARG VCS_REF
 LABEL org.label-schema.version=$VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.vcs-ref=$VCS_REF
-LABEL org.label-schema.vcs-url="https://github.com/dockhippie/minecraft-forge.git"
+LABEL org.label-schema.vcs-url="https://github.com/dockerwolf/minecraft-forge.git"
 LABEL org.label-schema.name="Minecraft Forge"
-LABEL org.label-schema.vendor="Thomas Boerger"
+LABEL org.label-schema.vendor="Chip Wolf"
 LABEL org.label-schema.schema-version="1.0"
