@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 declare -x SERVER_DYNMAP
-[[ -z "${SERVER_DYNMAP}" ]] && SERVER_DYNMAP="true"
+[[ -z "${SERVER_DYNMAP}" ]] && SERVER_DYNMAP="false"
 
 declare -x SERVER_SPONGE
 [[ -z "${SERVER_SPONGE}" ]] && SERVER_SPONGE="false"

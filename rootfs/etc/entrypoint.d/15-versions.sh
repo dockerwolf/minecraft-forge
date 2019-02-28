@@ -3,7 +3,7 @@
 declare -x DYNMAP_VERSION
 [[ -z "${DYNMAP_VERSION}" ]] && DYNMAP_VERSION="3.0-beta-3-forge"
 
-DYNMAP_JAR="Dynamp-${DYNMAP_VERSION}-${MINECRAFT_VERSION}.jar"
+DYNMAP_JAR="Dynmap-${DYNMAP_VERSION}-${MINECRAFT_VERSION}.jar"
 DYNMAP_URL="https://media.forgecdn.net/files/2645/936/${DYNMAP_JAR}"
 
 declare -x SPONGE_VERSION

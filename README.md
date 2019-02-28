@@ -28,10 +28,14 @@ To get an overview about the available versions please take a look at the [GitHu
 ## Available environment variables
 
 ```bash
-ENV SERVER_DYNMAP true
+ENV SERVER_DYNMAP false
 ENV SERVER_SPONGE false
 
 ENV DYNMAP_VERSION 3.0-beta-3-forge
+
+# Accepts a URL to a zip containing the root folder structure for a server pack
+# Only recommended for testing purposes
+ENV PACK_ZIP_URL false
 
 # The following require SERVER_SPONGE to equal true
 ENV SPONGE_FAWE false
