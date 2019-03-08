@@ -11,7 +11,7 @@ CMD ["/bin/s6-svscan", "/etc/s6"]
 
 ENV MINECRAFT_VERSION 1.12.2
 ENV FORGE_VERSION 14.23.5.2815
-ENV FORGE_JAR forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-universal.jar
+ENV SERVER_JAR forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-universal.jar
 ENV FORGE_URL http://files.minecraftforge.net/maven/net/minecraftforge/forge/${MINECRAFT_VERSION}-${FORGE_VERSION}/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar
 
 RUN curl --create-dirs -sfLo /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar ${FORGE_URL} && \
